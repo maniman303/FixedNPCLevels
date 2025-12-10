@@ -1,6 +1,11 @@
-# CommonLibF4 Plugin Template
+# Fixed NPC Levels
 
-This is a basic plugin template using CommonLibF4.
+Some NPCs will either scale up to some level with player, or will always scale with player.
+As a result their HP will bloat in an immersion breaking way, while players damage might cap at certain level. I do hate bullet sponges.
+
+There are complex and heavy solution for this like [Scourge](https://www.nexusmods.com/fallout4/mods/60917), but I wanted something smaller, something more focused on just the issue.
+
+This is how Fixed NPC levels happened.
 
 ### Requirements
 * [XMake](https://xmake.io) [2.8.2+]
@@ -8,14 +13,14 @@ This is a basic plugin template using CommonLibF4.
 
 ## Getting Started
 ```bat
-git clone --recurse-submodules https://github.com/libxse/commonlibf4-template
-cd commonlibf4-template
+git clone --recurse-submodules https://github.com/maniman303/FixedNPCLevels.git
+cd FixedNPCLevels
 ```
 
 ### Build
 To build the project, run the following command:
 ```bat
-xmake build
+xmake build -y
 ```
 
 > ***Note:*** *This will generate a `build/windows/` directory in the **project's root directory** with the build output.*
