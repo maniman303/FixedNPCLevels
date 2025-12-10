@@ -20,6 +20,9 @@ set_policy("package.requires_lock", true)
 add_rules("mode.debug", "mode.releasedbg")
 add_rules("plugin.vsxmake.autoupdate")
 
+-- add requires
+add_requires("jsoncpp")
+
 -- targets
 target("FixedNPCLevels")
     -- add dependencies to target
