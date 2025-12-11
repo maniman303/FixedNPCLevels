@@ -27,7 +27,7 @@ namespace Files
 		auto pluginPath = Files::GetPluginPath().append(path);
 
 		if (!std::filesystem::exists(pluginPath) || pluginPath.empty()) {
-			REX::WARN("Specified folder does not exist.");
+			REX::WARN(std::format("Plugin folder '{0}' does not exist.", path));
 			return result;
 		}
 
