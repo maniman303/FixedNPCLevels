@@ -21,7 +21,7 @@ cd FixedNPCLevels
 
 Run
 ```bat
-xmake project -k compile_commands
+xmake project -k compile_commands -y
 ```
 
 Then move `compile_commands.json` to `.vscode` folder.
