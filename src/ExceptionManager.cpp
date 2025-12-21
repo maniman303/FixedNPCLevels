@@ -18,7 +18,21 @@ bool ExceptionManager::Contains(RE::TESForm* form)
         return false;
     }
 
-    return exceptionCache.contains(form->GetFormID());
+    auto formId = form->GetFormID();
+
+    if (formId == 0x7)
+    {
+        // player form
+        return true;
+    }
+
+    if (formId == 0x566BB || formId == 0x566BC)
+    {
+        // spouse form
+        return true;
+    }
+
+    return exceptionCache.contains(formId);
 }
 
 int LoadFromFile(std::filesystem::directory_entry entry)
